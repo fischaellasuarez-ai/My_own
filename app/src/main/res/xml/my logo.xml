@@ -1,0 +1,81 @@
+
+    my logo.xml <View>(R.id.btnViewAll).setOnClickListener {
+    Toast.makeText(this, "View All", Toast.LENGTH_SHORT).show()
+    }
+    findViewById<View>(R.id.cardCreateRequirement).setOnClickListener {
+        Toast.makeText(this, "Create Requirement", Toast.LENGTH_SHORT).show()
+        }
+        findViewById<View>(R.id.navAdd).setOnClickListener {
+            Toast.makeText(this, "Add", Toast.LENGTH_SHORT).show()
+            }
+            }
+            }
+
+    === res/drawable/bg_circle_teal.xml ===
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="#B7DFD3"/>
+</shape>
+
+    === res/drawable/bg_circle_yellow.xml ===
+    <?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+<solid android:color="#FBEFB5"/>
+</shape>
+
+    === res/drawable/bg_circle_purple.xml ===
+    <?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+<solid android:color="#D9C6EC"/>
+</shape>
+
+    === res/drawable/bg_circle_gray.xml ===
+    <?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+<solid android:color="#E3E3E3"/>
+</shape>
+
+    === res/drawable/bg_circle_navy.xml ===
+    <?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+<solid android:color="#0B3FA8"/>
+<stroke android:width="2dp" android:color="#FFFFFF"/>
+</shape>
+
+    === res/drawable/bg_button_navy.xml ===
+    <?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+<solid android:color="#0B3FA8"/>
+<corners android:radius="8dp"/>
+</shape>
+
+    === res/drawable/bg_badge_ready.xml ===
+    <?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+<solid android:color="#9FD0EA"/>
+<corners android:radius="4dp"/>
+</shape>
+
+    === MainActivity.kt (click handling example) ===
+    package com.example.smartpack
+
+    import android.os.Bundle
+    import android.widget.Toast
+    import androidx.appcompat.app.AppCompatActivity
+
+    class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_main)
+
+    findViewById<android.view.View>(R.id.btnViewAll).setOnClickListener {
+Toast.makeText(this, "View All", Toast.LENGTH_SHORT).show()
+}
+findViewById<android.view.View>(R.id.cardCreateRequirement).setOnClickListener {
+    Toast.makeText(this, "Create Requirement", Toast.LENGTH_SHORT).show()
+    }
+    findViewById<android.view.View>(R.id.navAdd).setOnClickListener {
+        Toast.makeText(this, "Add", Toast.LENGTH_SHORT).show()
+        }
+        }
+        }
